@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pm="http://primefaces.org/mobile">
+
+
+<h:head>
+	<h:outputStylesheet library="css" name="layout.css" />
+	<h:outputStylesheet library="css" name="fontawesome-all.min.css" />
+</h:head>
+<h:body>
+
+	<div class="ui-grid ui-grid-responsive">
+		<div class="ui-grid-col-12">
+			<p>
+
+				<h:form>
+
+					<p:menubar styleClass="nav">
+						<p:menuitem styleClass="nav-iten" value="AGENDA"
+							url="javascript:void(0)" />
+
+						<p:menuitem styleClass="nav-iten" value="CLIENTE"
+							url="javascript:void(0)" />
+
+						<p:menuitem styleClass="nav-iten" value="SEGUIMIENTO"
+							url="javascript:void(0)" />
+
+						<p:menuitem styleClass="nav-iten" value="MANTENIMIENTO"
+							url="javascript:void(0)" />
+
+						<p:menuitem styleClass="nav-iten" value="SEGURIDAD"
+							url="javascript:void(0)" />
+
+						<f:facet name="options">
+							<p:commandButton type="button" icon="fas fa-user-circle" styleClass="nav"/>
+							<p:commandButton type="button" icon="fas fa-home" styleClass="nav"/>
+							<p:commandButton type="button" icon="fas fa-sign-out-alt" styleClass="nav"/>
+						</f:facet>
+
+					</p:menubar>
+				</h:form>
+
+			</p>
+		</div>
+	</div>
+	
+	<ui:insert name="content">
+	</ui:insert>
+	
+</h:body>
+</html>

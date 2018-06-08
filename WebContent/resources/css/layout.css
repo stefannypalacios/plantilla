@@ -1,0 +1,37 @@
+@CHARSET "ISO-8859-1";
+
+.ui-menu.ui-menubar.nav,
+.ui-menu.nav,
+.ui-menu.ui-widget.nav{
+	padding: 0;
+}
+
+.ui-menu.ui-widget li > .ui-menuitem-link.nav-iten{
+	width: auto;
+	padding: 15px 10px;
+}
+
+.ui-icon.fa,
+.ui-icon.fas,
+.ui-icon.far,
+.ui-icon.fal,
+.ui-icon.fab{
+  text-indent: unset;
+  background-image: none;
+  overflow: inherit;
+}
+
+img.rsp{
+	max-width: 500px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.ui-button-icon-only.nav{
+	width: auto;
+	padding: 7px 20px;
+	margin-right: 0;
+	border: none;
+}
